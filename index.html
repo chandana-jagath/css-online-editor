@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Online Runner</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.9/codemirror.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.9/codemirror.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.9/mode/css/css.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.9/mode/htmlmixed/htmlmixed.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>CSS Online Editor</h1>
+            <button id="themeToggle" class="theme-toggle-button">Toggle Theme</button>
+        </header>
+        <main>
+            <div class="editor">
+                <h3>HTML Code</h3>
+                <div id="htmlEditor" class="editor-box"></div>
+                <h3>CSS Code</h3>
+                <div id="cssEditor" class="editor-box"></div>
+
+                <button id="runBtn">Run Code</button>
+                <button id="saveCode">Save Code</button>
+                <button id="loadCode">Load Code</button>
+                <button id="exportCode">Export Code</button>
+                
+            </div>
+            <div class="preview">
+                <h3>Live Preview</h3>
+                <iframe id="output"></iframe>
+            </div>
+        </main>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
